@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style media="screen">
+    body {
+      height: 1540px;
+      background: linear-gradient(#22c1c3, #cd2dfd);
+      font-size: 25px;
+      font-family: cursive;
+      color: white;
+      text-align: center;
+    }
+    .box {
+      width: 80%;
+      height: 1500px;
+      background-color: #22c1c3;
+      margin: 40px auto;
+      border: 5px dotted #cd2dfd;
+      border-radius: 40px;
+    }
+    input {
+      width: 280px;
+      height: 30px;
+      font-size: 20px;
+    }
+    .hobbi {
+      margin: 0px auto 0px auto;
+      text-align: left;
+      width: 600px;
+    }
+    select {
+      width: 280px;
+      height: 30px;
+      font-size: 20px;
+    }
+    button {
+      margin-top: 40px;
+      width: 370px;
+      height: 90px;
+      font-size: 35px;
+      background-color: #290a29;
+      color: white;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Пройдіть будь ласка опитування</h1>
+    <form class="user" action="index.html" method="post">
+      <p>Ім'я користувача:
+        <input type="text" name="username" size="15" maxlength="30" value="">
+      </p>
+      <p>Пароль користувача:
+        <input type="password" name="password" size="15" value="">
+      </p>
+      <p>Ваші коментарі або побажання
+        <textarea name="comments" cols="20" rоws= "4"></textarea>
+      </p>
+      <p>Улюблений жанр музики:<br>
+        <input type="radio" name="genre" value= "rock" checked="checked"/>Рок<br>
+        <input type= "radio" name= "genre" value="pop"/>Поп<br>
+        <input type="radio" name="genre" value="techno"/>Реп <br>
+        <input type="radio" name="genre" value="techno"/>Джаз <br>
+        <input type="radio" name="genre" value="techno"/>Електро <br>
+      </p>
+      <div class="hobbi">
+        <p>Ваші захоплення: <br>
+          <input type="checkbox" name="services" value="">Спорт<br>
+          <input type="checkbox" name="services" value="">Музика<br>
+          <input type="checkbox" name="services" value="">Їжа<br>
+          <input type="checkbox" name="services" value="">Автомобілі<br>
+          <input type="checkbox" name="services" value="">Подорожжі<br>
+          <input type="checkbox" name="services" value="">Інше<br>
+          <input type="checkbox" name="services" value="">Немає<br>
+        </p>
+      </div>
+        <p>Скльки часу в день ви уділяєте своєму хоббі?</p>
+          <select name= "ustroista" >
+            <option value="ipod">Менше одної години</option>
+            <option value="radio">Годину</option>
+            <option value="computer">Дві години</option>
+            <option value="computer">3-5годин</option>
+            <option value="computer">Пів дня</option>
+            <option value="computer">Увесь день</option>
+          </select>
+        <fieldset>
+          <legend>Контактная информация</legend>
+          <label>Email: <br/>
+          <input type="text" name= "email"/></label><br/>
+          <label>Телефон:<br/>
+          <input type="text" name="phone"/></label><br/>
+          <label>Адреса: <br />
+          <input type= " text" name="fax"/></label>
+        </fieldset>
+        <button type="button" name="button">Відправити</button>
+    </form>
+  </div>
+</body>
+</html>
